@@ -36,11 +36,13 @@ form {
 .github-profile {
   display: flex;
   align-items: center;
-  background-color: #161b22; /* Light gray background */
+  background-color: #161b22;
   padding: 16px;
-  margin: 16px;
+  margin-top: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 32px); /* Calculate width minus margins */
+  max-width: 500px; /* Set a maximum width */
 }
 
 .github-profile img {
@@ -76,7 +78,17 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 10px;
 }
+
+@media (min-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
 button {
   background-color: #2ea44f; /* GitHub's green color */
   color: #fff;

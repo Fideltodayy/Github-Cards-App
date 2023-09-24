@@ -38,7 +38,7 @@ const handleFormSubmit = async (e) => {
 
 const CardList = (props) => {
   return (
-    <div>
+    <div className="card-container">
       {props.profiles.map((profile) => (
         <Card key={profile.id} {...profile} />
       ))}
@@ -92,7 +92,7 @@ class Form extends React.Component {
           type="text"
           value={this.state.userName}
           onChange={(event) => this.setState({ userName: event.target.value })}
-          placeholder="Github Username"
+          placeholder="Search Github Username"
           required
         />
         <button type="submit">Add Card</button>
