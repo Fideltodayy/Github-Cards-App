@@ -11,31 +11,6 @@ const testData = [
   },
 ];
 
-const handleFormSubmit = async (e) => {
-  try {
-    const response = await axios.post(
-      "http://localhost/digi-dairy-apis/v1/login",
-      {
-        email: "admin@gmail.com",
-        user_password: "admin",
-      }
-    );
-    console.log(response.data.token);
-    console.log(response.data.user.user_type);
-  } catch (error) {
-    console.log(error);
-  }
-
-  try {
-    const response = await axios.post(
-      "http://localhost/digi-dairy-apis/v1//supplier/get-suppliers"
-    );
-    console.log("Get suppliers", response);
-  } catch (error) {
-    console.log(error);
-  }
-};
-
 const CardList = (props) => {
   return (
     <div className="card-container">
@@ -76,7 +51,6 @@ class Card extends React.Component {
 class Form extends React.Component {
   state = { userName: "" };
   handleSubmit = async (event) => {
-    handleFormSubmit();
     event.preventDefault();
     const resp = await axios.get(
       `https://api.github.com/users/${this.state.userName}`
