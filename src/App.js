@@ -35,11 +35,13 @@ class Card extends React.Component {
           <div className="name">{profile.name}</div>
           <div className="company">{profile.company}</div>
           <div>
-            followers <br></br>
+            <span style={{ textDecoration: "underline" }}>followers</span>{" "}
+            <br />
             {profile.followers}
           </div>
           <div>
-            following <br></br>
+            <span style={{ textDecoration: "underline" }}>following</span>{" "}
+            <br />
             {profile.following}
           </div>
         </div>
@@ -50,6 +52,7 @@ class Card extends React.Component {
 
 class Form extends React.Component {
   state = { userName: "" };
+
   handleSubmit = async (event) => {
     event.preventDefault();
     const resp = await axios.get(
