@@ -93,6 +93,12 @@ class App extends React.Component {
         <div className="header">{this.props.title}</div>
         <Form onSubmit={this.addNewProfile} />
         <CardList profiles={this.state.profiles} />
+        <footer>
+          Made with {"\u2764"} by ~
+          <a href="https://twitter.com/Fideltodayy" target="blank">
+            Fideltodayy
+          </a>
+        </footer>
       </div>
     );
   }

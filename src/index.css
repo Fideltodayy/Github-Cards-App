@@ -117,3 +117,11 @@ input[type="text"] {
 .w3-main {
   margin-left: 220px; /* Adjusted margin to match GitHub's layout */
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
