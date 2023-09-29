@@ -117,7 +117,10 @@ input[type="text"] {
 .w3-main {
   margin-left: 220px; /* Adjusted margin to match GitHub's layout */
 }
-
+a {
+  text-decoration: none;
+  color: #0074d9;
+}
 footer {
   position: absolute;
   bottom: 0;
