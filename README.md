@@ -2,7 +2,7 @@
 ## Overview
 The GitHub Cards project is a dynamic web application built with React that allows users to display GitHub user profiles in a visually appealing format. It leverages the GitHub API to retrieve user information and renders it in a clean, organized layout.You can preview it in the link below:
 https://github-cards-v1.netlify.app/
-
+awaits further styling 
 
 ## Features
 Profile Display: The application showcases GitHub user profiles with their avatars, names, associated companies, followers, and following counts.
